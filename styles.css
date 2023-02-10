@@ -10,7 +10,7 @@
 .intro{
    opacity: 1;
 }
-@media(max-width:940px;){
+@media(min-width:940px;){
     #a,#b,#c{
         height:1000px;
     }
