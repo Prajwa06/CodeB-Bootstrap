@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeB-Programming Made Easier</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<!-- body starts here-->
+
+<body>
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href=""><img class="navbar-brand logo" src="/logo.png" alt="CodeBlogo " /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/articles.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Articles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Basic Programming</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Data Structures and Algorithes</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Machine Learning & Artificial Intelligence</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Write for us</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Support</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item top">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+
+        <Div class="mx-2">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
+            Log in
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Log in to CodeB</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </form>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signUp">
+            Sign Up
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="sexampleModalLabel">Sign up!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Create an Account</h3>
+                  <hr>
+                  <form>
+                    <div class="mb-3">
+                      <label for="sexampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="sexampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="sexampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="sexampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="sexampleInputPassword1" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="sexampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </form>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </Div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Caraosel-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" id="d">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="a">
+        <img src="/bram-naus-N1gUD_dCvJE-unsplash (1).jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="intro">Welcome To CodeB</h2>
+          <p class="intro">Latest Tech news Development Updates Tools</p>
+          <button type="button" class="btn btn-danger">Technology</button>
+          <button type="button" class="btn btn-primary">
+            Web Devlopment
+          </button>
+          <button type="button" class="btn btn-success">Tech-Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item" id="b">
+        <img src="/ales-nesetril-Im7lZjxeLhg-unsplash (1).jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="intro">Programming Made Easier</h2>
+          <p class="intro">Latest Tech news Development Updates Tools</p>
+          <button type="button" class="btn btn-danger">Technology</button>
+          <button type="button" class="btn btn-primary">
+            Web Devlopment
+          </button>
+          <button type="button" class="btn btn-success">Tech-Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item" id="c">
+        <img src="/remy_loz-3S0INpfREQc-unsplash (1).jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="intro">Connecting people and Technology</h2>
+          <p class="intro">Latest Tech news Development Updates Tools</p>
+          <button type="button" class="btn btn-danger">Technology</button>
+          <button type="button" class="btn btn-primary">
+            Web Devlopment
+          </button>
+          <button type="button" class="btn btn-success">Tech-Fun</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+
+
+
+
+
+  <!-- Cards-->
+  <div class="container my-5">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Web 3.0</strong>
+            <h3 class="mb-0">New ways of Mining Crypto with Web 3.0</h3>
+            <div class="mb-1 text-muted">Feb 09</div>
+            <p class="card-text mb-auto">
+              Leader in cryptocurrency, Bitcoin, Ethereum, XRP, blockchain, DeFi, digital finance and Web 3.0 news with
+              analysis, video and live price updates.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="/art-rachen-yJpjLD3c9bU-unsplash.jpg" alt="" class="bd-placeholder-img" width="200"
+              height="300">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Artificial Intelligence</strong>
+            <h3 class="mb-0">ChatGPT revolution in AI industry</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">
+              Microsoft launched Chat-GPT in November 2022. Technologists believe that Chat GPT is well advanced and
+              might kill Google's business.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="/andrea-de-santis-zwd435-ewb4-unsplash.jpg" alt="" class="bd-placeholder-img"
+              width="200" height="300">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Frond-end Web</strong>
+            <h3 class="mb-0">
+              Angular Drag’n Drop With Query Components </h3>
+            <div class="mb-1 text-muted">Jan 10</div>
+            <p class="card-text mb-auto">
+              The AngularPortfolioMgr project can import the SEC filings of listed companies. The importer class is the
+              FileClientBean and imports the JSON archive from...
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1506526794364-ba711a0d97fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW5ndWxhciUyMGpzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+              alt="" class="bd-placeholder-img cardImage" width="200" height="300">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">Python-web</strong>
+            <h3 class="mb-0">How To Get Page Source in Selenium Using Python</h3>
+            <div class="mb-1 text-muted">Feb 13</div>
+            <p class="mb-auto">
+              Retrieving the page source of a website under scrutiny is a day-to-day task for most test automation
+              engineers. Analysis of the page source helps eliminate bugs...
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhwfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+              alt="" class="bd-placeholder-img" width="200" height="300">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-secondary">Coding Contest</strong>
+            <h3 class="mb-0">Hacking the Hackathon</h3>
+            <div class="mb-1 text-muted">Feb 10</div>
+            <p class="card-text mb-auto">
+              Developers love to hack, but software engineering as a profession can actually be quite mundane. We attend
+              hours of meetings, give status reports, fix bugs,
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1562860149-691401a306f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="" class="bd-placeholder-img" width="200" height="300">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-info">Cloud Computing</strong>
+            <h3 class="mb-0">
+              World Is Moving Towards Serverless Computing</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">
+              Microsoft launched Chat-GPT in November 2022. Technologists believe that Chat GPT is well advanced and
+              might kill Google's business.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="" class="bd-placeholder-img" width="200" height="300">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+
+
+
+
+
+  <div class="container-fluid text-muted bg-dark ">
+    <div class="py-5 mx-5">
+      <p>Follow Us On Social Media</p>
+      <a href=""><img src="/facebook.png" alt="" height="20px"></a>
+      <a href=""><img src="/instagram.png" alt="" height="20px"></a>
+      <a href=""><img src="/twitter.png" alt="" height="20px"></a>
+      <a href=""><img src="/linkedin.png" alt="" height="20px"></a>
+    </div>
+    <div class="row py-1 px-5">
+      <div class="col-lg-3 col-md-4">
+        <p>About CodeB</p>
+
+        <a href="">FAQ</a><br>
+        <a href="">Send Feedback</a><br>
+        <a href="">Careers</a><br>
+        <a href="">Site Map</a><br>
+        <a href="">Terms & Condition</a> <br>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+        <p>Contribute</p>
+        <a href="">Beacome a Writter</a> <br>
+        <a href="">Support</a> <br>
+        <a href="">Advertise</a> <br>
+        <a href="">Refer and earn</a> <br>
+        <a href="">Visit writer's zone</a>
+
+      </div>
+
+
+      <div class="col-lg-3 col-md-4">
+        <p>Legal</p>
+        <a href="">Privacy Policy</a> <br>
+        <a href="">Terms of service</a><br>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 ">
+        <p>Contact us</p>
+        <p>
+          678 Park Offices Drive
+          Suite 380
+          Durham, NC 27706
+          support@codeB.com
+          +1 (919) 876-0320
+        </p>
+      </div>
+      <div>
+        <hr class="featurette-divider">
+      </div>
+
+    </div>
+
+
+    <p class="mx-5">©CodeB, All rights reserved, Product by Papergum</p>
+  </div>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
